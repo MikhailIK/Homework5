@@ -1,4 +1,5 @@
-// 1
+// 1 
+
 let a;
 let b;
 
@@ -39,7 +40,7 @@ function square(d) {
 }
 
 console.log(square(5)); // Для проверки правильности
-*/
+
 // 4
 
 function age() {
@@ -59,9 +60,29 @@ function age() {
 
 // 5
 
+function checkNum(f, v) {
+    f = prompt("Введите число");
+    v = prompt("Введите число");
+    if ((isNaN(f)) || (isNaN(v))) {
+        console.log("Одно или оба значения не являются числом");
+    } 
+    else {
+        console.log((f * v));
+    }
+}
+checkNum()
+
+// 6
+
+
 function askNumber () {
-    num = prompt("Напишите число.");
-    console.log(typeof(num));
+    n = prompt("Напишите число.");
+    if (isNaN(n)) {
+        console.log("Переданный параметр не является числом");
+    } 
+    else {
+        console.log("n в кубе равняется: " + (n ** 3));
+    }
 }
 
 askNumber();
